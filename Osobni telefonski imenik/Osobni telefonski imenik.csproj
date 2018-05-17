@@ -190,6 +190,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\DrzavaController.cs" />
+    <Compile Include="Controllers\GradController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -198,6 +200,10 @@
     <Compile Include="Migrations\201805171746092_InitialMigration.cs" />
     <Compile Include="Migrations\201805171746092_InitialMigration.Designer.cs">
       <DependentUpon>201805171746092_InitialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805171829201_KreiranjeTablica.cs" />
+    <Compile Include="Migrations\201805171829201_KreiranjeTablica.Designer.cs">
+      <DependentUpon>201805171829201_KreiranjeTablica.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -269,9 +275,20 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Drzava\Create.cshtml" />
+    <Content Include="Views\Drzava\Delete.cshtml" />
+    <Content Include="Views\Drzava\Details.cshtml" />
+    <Content Include="Views\Drzava\Edit.cshtml" />
+    <Content Include="Views\Drzava\Index.cshtml" />
+    <Content Include="Views\Grad\Create.cshtml" />
+    <Content Include="Views\Grad\Delete.cshtml" />
+    <Content Include="Views\Grad\Details.cshtml" />
+    <Content Include="Views\Grad\Edit.cshtml" />
+    <Content Include="Views\Grad\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Osoba\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -289,6 +306,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201805171746092_InitialMigration.resx">
       <DependentUpon>201805171746092_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805171829201_KreiranjeTablica.resx">
+      <DependentUpon>201805171829201_KreiranjeTablica.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

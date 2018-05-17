@@ -11,13 +11,13 @@ namespace Osobni_telefonski_imenik.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Guid OsobaID { get; set; }
 
+        public Guid GradID { get; set; }
+
         public string Ime { get; set; }
 
         public string Prezime { get; set; }
 
         public string Opis { get; set; }
-
-        public Grad GradID { get; set; }
 
         public virtual Grad Grad{ get; set; }
     }

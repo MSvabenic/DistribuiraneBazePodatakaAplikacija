@@ -71,3 +71,4 @@ F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski ime
 F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\obj\Debug\Osobni telefonski imenik.pdb
 F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\obj\Debug\Osobni_telefonski_imenik.Migrations.InitialMigration.resources
 F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\obj\Debug\Osobni telefonski imenik.csproj.GenerateResource.Cache
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\obj\Debug\Osobni_telefonski_imenik.Migrations.KreiranjeTablica.resources
