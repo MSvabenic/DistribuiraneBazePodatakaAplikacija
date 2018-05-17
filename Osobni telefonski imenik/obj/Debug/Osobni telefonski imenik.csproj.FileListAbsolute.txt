@@ -1,0 +1,73 @@
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\ApplicationInsights.config
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Osobni telefonski imenik.dll.config
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Osobni telefonski imenik.dll
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Osobni telefonski imenik.pdb
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Antlr3.Runtime.dll
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\EntityFramework.dll
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\EntityFramework.SqlServer.dll
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Microsoft.AI.Agent.Intercept.dll
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Microsoft.AI.DependencyCollector.dll
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Microsoft.AI.Web.dll
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Microsoft.AI.WindowsServer.dll
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Microsoft.ApplicationInsights.dll
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Microsoft.AspNet.Identity.Core.dll
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Microsoft.Owin.dll
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Microsoft.Owin.Security.Cookies.dll
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Microsoft.Owin.Security.dll
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Microsoft.Owin.Security.Facebook.dll
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Microsoft.Owin.Security.Google.dll
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Microsoft.Owin.Security.OAuth.dll
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Microsoft.Owin.Security.Twitter.dll
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Microsoft.Web.Infrastructure.dll
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Newtonsoft.Json.dll
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Owin.dll
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\System.Web.Helpers.dll
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\System.Web.Mvc.dll
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\System.Web.Optimization.dll
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\System.Web.Razor.dll
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\System.Web.WebPages.Deployment.dll
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\System.Web.WebPages.dll
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\System.Web.WebPages.Razor.dll
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\WebGrease.dll
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\System.Web.Helpers.xml
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\System.Web.Mvc.xml
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\System.Web.Optimization.xml
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\System.Web.Razor.xml
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\System.Web.WebPages.xml
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\System.Web.WebPages.Deployment.xml
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\System.Web.WebPages.Razor.xml
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Antlr3.Runtime.pdb
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Newtonsoft.Json.xml
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\EntityFramework.xml
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\EntityFramework.SqlServer.xml
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Microsoft.AspNet.Identity.Core.xml
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Microsoft.Owin.xml
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Microsoft.Owin.Security.xml
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Microsoft.Owin.Security.Facebook.xml
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Microsoft.Owin.Security.Cookies.xml
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Microsoft.Owin.Security.OAuth.xml
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Microsoft.Owin.Security.Google.xml
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Microsoft.Owin.Security.Twitter.xml
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Microsoft.ApplicationInsights.xml
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Microsoft.AI.DependencyCollector.xml
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Microsoft.AI.WindowsServer.xml
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Microsoft.AI.Web.xml
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\obj\Debug\Osobni telefonski imenik.csprojResolveAssemblyReference.cache
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\obj\Debug\Osobni telefonski imenik.csproj.CoreCompileInputs.cache
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\obj\Debug\Osobni telefonski imenik.dll
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\obj\Debug\Osobni telefonski imenik.pdb
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\obj\Debug\Osobni_telefonski_imenik.Migrations.InitialMigration.resources
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\obj\Debug\Osobni telefonski imenik.csproj.GenerateResource.Cache
