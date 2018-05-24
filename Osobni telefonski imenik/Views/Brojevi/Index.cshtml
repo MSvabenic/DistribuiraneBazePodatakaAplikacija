@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "Pregled kontakta";
+}
+<div class="container">
+    <div class="row">
+        <div>
+            <div class="col-lg-2">
+                <h4>
+                    @Html.ActionLink("Dodaj osobu", "Create", "Osoba")
+                </h4>
+            </div>
+            <div class="col-lg-2">
+                <h4>
+                    @Html.ActionLink("Dodaj broj", "Create", "Brojevi")
+                </h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="form-horizontal">
+    <table id="brojeviosobe" class="table table-bordered">
+        <thead>
+        <tr>
+            <th>OsobaID</th>
+            <th>Ime</th>
+            <th>Prezime</th>
+            <th>Broj</th>
+            <th>Opcije</th>
+        </tr>
+        </thead>
+    </table>
+</div>
+
+@Styles.Render("~/Content/Site.css",
+    "~/Content/Font-awesome/css/font-awesome.min.css")
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+<script src="../../Scripts/jquery-1.10.2.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script src="~/Scripts/Custom/OsobaBrojevi.js"></script>

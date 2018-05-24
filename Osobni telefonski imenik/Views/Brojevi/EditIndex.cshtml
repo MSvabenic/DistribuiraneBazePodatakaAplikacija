@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Brojevi";
+}
+
+<h2>Brojevi</h2>
+<div class="form-horizontal">
+    <table id="brojevi" class="table table-bordered">
+        <thead>
+            <tr>
+                <th>BrojID</th>
+                <th>Broj</th>
+                <th>Broj tip</th>
+                <th>Opis</th>
+                <th>Opcije</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+
+@Styles.Render("~/Content/Site.css",
+    "~/Content/Font-awesome/css/font-awesome.min.css")
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+<script src="../../Scripts/jquery-1.10.2.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script src="~/Scripts/Custom/Brojevi.js"></script>

@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Pregled gradova";
+}
+
+<h2>Gradovi</h2>
+<h4>
+    @Html.ActionLink("Dodaj grad", "Create")
+</h4>
+<div class="form-horizontal">
+    <table id="gradovi" class="table table-bordered">
+        <thead>
+            <tr>
+                <th>GradID</th>
+                <th>Naziv</th>
+                <th>Država</th>
+                <th>Opcije</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+
+@Styles.Render("~/Content/Site.css",
+    "~/Content/Font-awesome/css/font-awesome.min.css")
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+<script src="../../Scripts/jquery-1.10.2.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script src="~/Scripts/Custom/Grad.js"></script>

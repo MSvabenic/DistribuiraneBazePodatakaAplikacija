@@ -18,7 +18,7 @@ namespace Osobni_telefonski_imenik.Models
 
         public DbSet<Osoba> Osoba { get; set; }
 
-        public DbSet<Brojevi> Brojevi { get; set; }
+        public DbSet<OsobaBroj> OsobaBroj { get; set; }
 
 
         public ApplicationDbContext()
@@ -52,12 +52,12 @@ namespace Osobni_telefonski_imenik.Models
             modelBuilder.Entity<Osoba>()
                 .HasRequired(x => x.Grad);
 
-            modelBuilder.Entity<Brojevi>()
-                .HasKey(x => x.BrojID);
-            modelBuilder.Entity<Brojevi>()
-                .HasRequired(x => x.BrojTip);
-            modelBuilder.Entity<Brojevi>()
+            modelBuilder.Entity<OsobaBroj>()
+                .HasKey(x => x.ID);
+            modelBuilder.Entity<OsobaBroj>()
                 .HasRequired(x => x.Osoba);
+            modelBuilder.Entity<OsobaBroj>()
+                .HasRequired(x => x.BrojTip);
         }
     }
 }

@@ -22,3 +22,62 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/*Overridane bootstrap klase*/
+
+/*Navigacijska traka*/
+.navbar-inverse {
+    background-color: #428bca;
+    border-color: #428bca;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #000000;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #000000;
+}
+
+/*Body*/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family:'Wendy One', sans-serif;
+    font-weight: 300;
+    line-height: 1.1;
+}
+
+.img-thumbnail {
+    margin-bottom: 20px;
+}
+
+/*Tablica*/
+table {
+    margin: 0 auto;
+    width: 100%;
+    clear: both;
+    border-collapse: collapse;
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+/*Forma*/
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+.btn {
+    margin-top:10px;
+}

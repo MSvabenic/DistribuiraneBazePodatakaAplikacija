@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Država";
+}
+
+<h2>Države</h2>
+<h4>
+    @Html.ActionLink("Dodaj državu", "Create")
+</h4>
+<div class="form-horizontal">
+    <table id="drzave" class="table table-bordered">
+        <thead>
+            <tr>
+                <th>DrzavaID</th>
+                <th>Naziv</th>
+                <th>Opcije</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+
+@Styles.Render("~/Content/Site.css",
+    "~/Content/Font-awesome/css/font-awesome.min.css")
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+<script src="../../Scripts/jquery-1.10.2.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script src="~/Scripts/Custom/Drzave.js"></script>

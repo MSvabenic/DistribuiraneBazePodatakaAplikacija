@@ -1,3 +1,5 @@
+using Osobni_telefonski_imenik.Models;
+
 namespace Osobni_telefonski_imenik.Migrations
 {
     using System;
@@ -26,6 +28,20 @@ namespace Osobni_telefonski_imenik.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
+
+            context.Drzava.AddOrUpdate(
+                x => x.DrzavaID,
+                new Drzava { Naziv = "Hrvatska" },
+                new Drzava { Naziv = "Slovenija" },
+                new Drzava { Naziv = "Èeška" }
+            );
+
+            context.BrojTip.AddOrUpdate(
+               x => x.Naziv,
+               new BrojTip { Naziv = "Kuæni"},
+               new BrojTip { Naziv = "Posao" },
+               new BrojTip { Naziv = "Mobitel" }
+               );
         }
     }
 }

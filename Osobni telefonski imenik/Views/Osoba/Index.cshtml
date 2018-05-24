@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Pregled osoba";
+}
+
+<h2>Osobe</h2>
+<h4>
+    @Html.ActionLink("Dodaj osobu", "Create")
+</h4>
+<div class="form-horizontal">
+    <table id="osobe" class="table table-bordered">
+        <thead>
+        <tr>
+            <th>OsobaID</th>
+            <th>Ime</th>
+            <th>Prezime</th>
+            <th>Grad</th>
+            <th>Opis</th>
+            <th>Opcije</th>
+        </tr>
+        </thead>
+    </table>
+</div>
+
+@Styles.Render("~/Content/Site.css",
+    "~/Content/Font-awesome/css/font-awesome.min.css")
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+<script src="../../Scripts/jquery-1.10.2.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script src="~/Scripts/Custom/Osoba.js"></script>

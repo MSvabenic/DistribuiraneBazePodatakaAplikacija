@@ -10,9 +10,11 @@ namespace Osobni_telefonski_imenik.ViewModels
 {
     public class BrojeviViewModel
     {
+        public Guid BrojID { get; set; }
+
         [DisplayName("Osoba")]
         [Required(ErrorMessage = "Obvezno je odabrati osobu!")]
-        public Guid OsobaId { get; set; }
+        public Guid OsobaID { get; set; }
 
         [DisplayName("Tip broja telefona")]
         [Required(ErrorMessage = "Obvezno je odabrati tip broja!")]

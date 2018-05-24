@@ -190,33 +190,36 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BrojeviController.cs" />
     <Compile Include="Controllers\DrzavaController.cs" />
     <Compile Include="Controllers\GradController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\OsobaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201805171746092_InitialMigration.cs" />
-    <Compile Include="Migrations\201805171746092_InitialMigration.Designer.cs">
-      <DependentUpon>201805171746092_InitialMigration.cs</DependentUpon>
+    <Compile Include="Migrations\201805221921084_InitialMigration.cs" />
+    <Compile Include="Migrations\201805221921084_InitialMigration.Designer.cs">
+      <DependentUpon>201805221921084_InitialMigration.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201805171829201_KreiranjeTablica.cs" />
-    <Compile Include="Migrations\201805171829201_KreiranjeTablica.Designer.cs">
-      <DependentUpon>201805171829201_KreiranjeTablica.cs</DependentUpon>
+    <Compile Include="Migrations\201805241931075_DodanUserID.cs" />
+    <Compile Include="Migrations\201805241931075_DodanUserID.Designer.cs">
+      <DependentUpon>201805241931075_DodanUserID.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
-    <Compile Include="Models\Brojevi.cs" />
     <Compile Include="Models\BrojTip.cs" />
     <Compile Include="Models\Drzava.cs" />
     <Compile Include="Models\Grad.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Osoba.cs" />
+    <Compile Include="Models\OsobaBroj.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\BrojeviViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -231,6 +234,11 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\Custom\Brojevi.js" />
+    <Content Include="Scripts\Custom\OsobaBrojevi.js" />
+    <Content Include="Scripts\Custom\Drzave.js" />
+    <Content Include="Scripts\Custom\Grad.js" />
+    <Content Include="Scripts\Custom\Osoba.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -252,8 +260,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
@@ -275,20 +281,23 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Drzava\Create.cshtml" />
-    <Content Include="Views\Drzava\Delete.cshtml" />
-    <Content Include="Views\Drzava\Details.cshtml" />
-    <Content Include="Views\Drzava\Edit.cshtml" />
     <Content Include="Views\Drzava\Index.cshtml" />
-    <Content Include="Views\Grad\Create.cshtml" />
-    <Content Include="Views\Grad\Delete.cshtml" />
-    <Content Include="Views\Grad\Details.cshtml" />
-    <Content Include="Views\Grad\Edit.cshtml" />
+    <Content Include="Views\Drzava\Edit.cshtml" />
+    <Content Include="Views\Drzava\Create.cshtml" />
     <Content Include="Views\Grad\Index.cshtml" />
+    <Content Include="Views\Grad\Edit.cshtml" />
+    <Content Include="Views\Grad\Create.cshtml" />
+    <Content Include="Views\Osoba\Index.cshtml" />
+    <Content Include="Views\Osoba\Edit.cshtml" />
+    <Content Include="Views\Osoba\Create.cshtml" />
+    <Content Include="Views\Brojevi\Index.cshtml" />
+    <Content Include="Views\Brojevi\Create.cshtml" />
+    <Content Include="Views\Brojevi\EditIndex.cshtml" />
+    <Content Include="Views\Brojevi\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Osoba\" />
+    <Folder Include="Content\Slike\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -304,11 +313,11 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201805171746092_InitialMigration.resx">
-      <DependentUpon>201805171746092_InitialMigration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201805221921084_InitialMigration.resx">
+      <DependentUpon>201805221921084_InitialMigration.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201805171829201_KreiranjeTablica.resx">
-      <DependentUpon>201805171829201_KreiranjeTablica.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201805241931075_DodanUserID.resx">
+      <DependentUpon>201805241931075_DodanUserID.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
