@@ -7,7 +7,7 @@
                 tr.append("<td>" + json[i].OsobaId + "</td>");
                 tr.append("<td>" + json[i].Ime + "</td>");
                 tr.append("<td>" + json[i].Prezime + "</td>");
-                tr.append("<td>" + json[i].Broj + "</td>");
+                tr.append("<td>" + json[i].Brojevi + "</td>");
                 tr.append("<td>" + json[i].Opcije + "</td>");
                 $('table').append(tr);
             }
@@ -15,6 +15,7 @@
             var kanta = '<i class="fa fa-trash-o fa-2x" aria-hidden="true" id="kanta"></i>';
             var olovka = '<i class="fa fa-pencil fa-2x" aria-hidden="true" id="olovka"></i>';
             var table = $('#brojeviosobe').DataTable({
+                "order": [[1, "asc"]],
                 "autoWidth": true,
                 "oLanguage": {
                     "sUrl": "https://cdn.datatables.net/plug-ins/1.10.16/i18n/Croatian.json"

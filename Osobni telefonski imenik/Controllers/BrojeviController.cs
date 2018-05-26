@@ -29,7 +29,7 @@ namespace Osobni_telefonski_imenik.Controllers
 
         public ActionResult Create()
         {
-            ViewBag.OsobaID = new SelectList(_context.Osoba, "OsobaID","Ime");
+            ViewBag.OsobaID = new SelectList(_context.Osoba, "OsobaID","ImePrezime");
             ViewBag.BrojTipID = new SelectList(_context.BrojTip, "BrojTipID", "Naziv");
 
             var viewModel = new BrojeviViewModel()

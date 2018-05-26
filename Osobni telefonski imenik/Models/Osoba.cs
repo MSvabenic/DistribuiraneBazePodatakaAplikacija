@@ -15,6 +15,12 @@ namespace Osobni_telefonski_imenik.Models
 
         public string UserID { get; set; }
 
+        public string ImePrezime
+        {
+            get { return Ime + " " + Prezime; }
+            private set { }
+        }
+
         [DisplayName("Grad")]
         [Required(ErrorMessage = "Obvezno je unijeti grad kontakta!")]
         public Guid GradID { get; set; }

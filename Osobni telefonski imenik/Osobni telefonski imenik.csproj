@@ -207,6 +207,10 @@
     <Compile Include="Migrations\201805241931075_DodanUserID.Designer.cs">
       <DependentUpon>201805241931075_DodanUserID.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201805251837317_DodanFullName.cs" />
+    <Compile Include="Migrations\201805251837317_DodanFullName.Designer.cs">
+      <DependentUpon>201805251837317_DodanFullName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -318,6 +322,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201805241931075_DodanUserID.resx">
       <DependentUpon>201805241931075_DodanUserID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805251837317_DodanFullName.resx">
+      <DependentUpon>201805251837317_DodanFullName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

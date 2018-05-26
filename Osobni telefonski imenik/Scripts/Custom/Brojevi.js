@@ -16,6 +16,7 @@ $(document).ready(function () {
             var kanta = '<i class="fa fa-trash-o fa-2x" aria-hidden="true" id="kanta"></i>';
             var olovka = '<i class="fa fa-pencil fa-2x" aria-hidden="true" id="olovka"></i>';
             var table = $('#brojevi').DataTable({
+                "order": [[1, "asc"]],
                 "autoWidth": true,
                 "oLanguage": {
                     "sUrl": "https://cdn.datatables.net/plug-ins/1.10.16/i18n/Croatian.json"
