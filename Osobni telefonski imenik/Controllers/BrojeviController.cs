@@ -29,7 +29,7 @@ namespace Osobni_telefonski_imenik.Controllers
 
         public ActionResult Create()
         {
-            ViewBag.OsobaID = new SelectList(_context.Osoba, "OsobaID","ImePrezime");
+            ViewBag.OsobaID = new SelectList(_context.Osoba, "OsobaID", "ImePrezime");
             ViewBag.BrojTipID = new SelectList(_context.BrojTip, "BrojTipID", "Naziv");
 
             var viewModel = new BrojeviViewModel()
@@ -51,16 +51,23 @@ namespace Osobni_telefonski_imenik.Controllers
                 return View("Create", viewModel);
             }
 
-            var broj = new OsobaBroj()
+            var broj = new Brojevi
             {
                 ID = new Guid(),
-                OsobaID = viewModel.OsobaID,
                 BrojTipID = viewModel.BrojTipID,
                 Broj = viewModel.Broj,
                 Opis = viewModel.OpisBroja
             };
 
-            _context.OsobaBroj.Add(broj);
+            var osobaBroj = new OsobaBroj
+            {
+                ID = new Guid(),
+                OsobaID = viewModel.OsobaID,
+                BrojID = broj.ID
+            };
+
+            _context.Broj.Add(broj);
+            _context.OsobaBroj.Add(osobaBroj);
             _context.SaveChanges();
 
             return RedirectToAction("Index", "Brojevi");
@@ -78,9 +85,9 @@ namespace Osobni_telefonski_imenik.Controllers
 
             var viewModel = new BrojeviViewModel()
             {
-                Broj = _context.OsobaBroj.Where(x => x.ID == ID).Select(x => x.Broj).FirstOrDefault(),
+                Broj = _context.Broj.Where(x => x.ID == ID).Select(x => x.Broj).FirstOrDefault(),
                 BrojTip = _context.BrojTip.ToList(),
-                OpisBroja = _context.OsobaBroj.Where(x => x.ID == ID).Select(x => x.Opis).FirstOrDefault()
+                OpisBroja = _context.Broj.Where(x => x.ID == ID).Select(x => x.Opis).FirstOrDefault()
             };
 
             return View(viewModel);
@@ -90,23 +97,24 @@ namespace Osobni_telefonski_imenik.Controllers
         public ActionResult Edit([Bind(Include = "OsobaID,BrojID,BrojTipID,Broj,OpisBroja")] BrojeviViewModel brojevi, Guid? ID)
         {
             ViewBag.BrojTipID = new SelectList(_context.BrojTip, "BrojTipID", "Naziv");
-            OsobaBroj osobaBroj = _context.OsobaBroj.SingleOrDefault(x => x.ID == ID);
+            Brojevi broj = _context.Broj.SingleOrDefault(x => x.ID == ID);
+            var redirectID = _context.OsobaBroj.Where(x => x.BrojID == ID).Select(x => x.OsobaID).FirstOrDefault();
 
             if (ModelState.IsValid)
             {
-                osobaBroj.BrojTipID = brojevi.BrojTipID;
-                osobaBroj.Broj = brojevi.Broj;
-                osobaBroj.Opis = brojevi.OpisBroja;
-                _context.Entry(osobaBroj).State = EntityState.Modified;
+                broj.BrojTipID = brojevi.BrojTipID;
+                broj.Broj = brojevi.Broj;
+                broj.Opis = brojevi.OpisBroja;
+                _context.Entry(broj).State = EntityState.Modified;
                 _context.SaveChanges();
             }
-            return RedirectToAction("EditIndex", new {@ID = osobaBroj.OsobaID});
+            return RedirectToAction("EditIndex", new { @ID = redirectID});
         }
 
         [HttpPost, ActionName("Delete")]
         public JsonResult Delete(Guid? ID)
         {
-            OsobaBroj brojevi = _context.OsobaBroj.Find(ID);
+            Brojevi brojevi = _context.Broj.Find(ID);
 
             if (ID == null)
             {
@@ -114,7 +122,7 @@ namespace Osobni_telefonski_imenik.Controllers
             }
             else
             {
-                _context.OsobaBroj.Remove(brojevi);
+                _context.Broj.Remove(brojevi);
                 _context.SaveChanges();
             }
             return Json(brojevi);
@@ -125,10 +133,10 @@ namespace Osobni_telefonski_imenik.Controllers
             var brojevi = _context.OsobaBroj.Where(x => x.OsobaID == ID)
                 .Select(x => new
                 {
-                    brojID = x.ID,
-                    broj = x.Broj,
-                    brojTip = x.BrojTip.Naziv,
-                    opis = x.Opis
+                    brojID = x.BrojID,
+                    broj = x.Broj.Broj,
+                    brojTip = x.Broj.BrojTip.Naziv,
+                    opis = x.Broj.Broj
                 });
             return Json(brojevi, JsonRequestBehavior.AllowGet);
         }
@@ -141,7 +149,7 @@ namespace Osobni_telefonski_imenik.Controllers
                              select new
                              {
                                  OsobaId = g.Key,
-                                 Broj = string.Join(",", g.Select(x => x.Broj))
+                                 Broj = string.Join(",", g.Select(x => x.Broj.Broj))
                              };
 
             var osoba = from brojevi in svibrojevi

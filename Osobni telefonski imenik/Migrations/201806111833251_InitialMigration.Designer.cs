@@ -13,7 +13,7 @@ namespace Osobni_telefonski_imenik.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201805221921084_InitialMigration"; }
+            get { return "201806111833251_InitialMigration"; }
         }
         
         string IMigrationMetadata.Source

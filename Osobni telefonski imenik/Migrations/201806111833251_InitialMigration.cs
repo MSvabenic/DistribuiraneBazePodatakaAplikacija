@@ -42,6 +42,8 @@ namespace Osobni_telefonski_imenik.Migrations
                 c => new
                     {
                         OsobaID = c.Guid(nullable: false, identity: true),
+                        UserID = c.String(),
+                        ImePrezime = c.String(),
                         GradID = c.Guid(nullable: false),
                         Ime = c.String(nullable: false),
                         Prezime = c.String(nullable: false),
@@ -57,14 +59,25 @@ namespace Osobni_telefonski_imenik.Migrations
                     {
                         ID = c.Guid(nullable: false, identity: true),
                         OsobaID = c.Guid(nullable: false),
+                        BrojID = c.Guid(nullable: false),
+                    })
+                .PrimaryKey(t => t.ID)
+                .ForeignKey("dbo.Brojevi", t => t.BrojID, cascadeDelete: true)
+                .ForeignKey("dbo.Osoba", t => t.OsobaID, cascadeDelete: true)
+                .Index(t => t.OsobaID)
+                .Index(t => t.BrojID);
+            
+            CreateTable(
+                "dbo.Brojevi",
+                c => new
+                    {
+                        ID = c.Guid(nullable: false, identity: true),
                         BrojTipID = c.Guid(nullable: false),
                         Broj = c.String(),
                         Opis = c.String(),
                     })
                 .PrimaryKey(t => t.ID)
                 .ForeignKey("dbo.BrojTip", t => t.BrojTipID, cascadeDelete: true)
-                .ForeignKey("dbo.Osoba", t => t.OsobaID, cascadeDelete: true)
-                .Index(t => t.OsobaID)
                 .Index(t => t.BrojTipID);
             
             CreateTable(
@@ -144,7 +157,8 @@ namespace Osobni_telefonski_imenik.Migrations
             DropForeignKey("dbo.AspNetUserClaims", "UserId", "dbo.AspNetUsers");
             DropForeignKey("dbo.AspNetUserRoles", "RoleId", "dbo.AspNetRoles");
             DropForeignKey("dbo.OsobaBroj", "OsobaID", "dbo.Osoba");
-            DropForeignKey("dbo.OsobaBroj", "BrojTipID", "dbo.BrojTip");
+            DropForeignKey("dbo.OsobaBroj", "BrojID", "dbo.Brojevi");
+            DropForeignKey("dbo.Brojevi", "BrojTipID", "dbo.BrojTip");
             DropForeignKey("dbo.Osoba", "GradID", "dbo.Grad");
             DropForeignKey("dbo.Grad", "DrzavaID", "dbo.Drzava");
             DropIndex("dbo.AspNetUserLogins", new[] { "UserId" });
@@ -153,7 +167,8 @@ namespace Osobni_telefonski_imenik.Migrations
             DropIndex("dbo.AspNetUserRoles", new[] { "RoleId" });
             DropIndex("dbo.AspNetUserRoles", new[] { "UserId" });
             DropIndex("dbo.AspNetRoles", "RoleNameIndex");
-            DropIndex("dbo.OsobaBroj", new[] { "BrojTipID" });
+            DropIndex("dbo.Brojevi", new[] { "BrojTipID" });
+            DropIndex("dbo.OsobaBroj", new[] { "BrojID" });
             DropIndex("dbo.OsobaBroj", new[] { "OsobaID" });
             DropIndex("dbo.Osoba", new[] { "GradID" });
             DropIndex("dbo.Grad", new[] { "DrzavaID" });
@@ -162,6 +177,7 @@ namespace Osobni_telefonski_imenik.Migrations
             DropTable("dbo.AspNetUsers");
             DropTable("dbo.AspNetUserRoles");
             DropTable("dbo.AspNetRoles");
+            DropTable("dbo.Brojevi");
             DropTable("dbo.OsobaBroj");
             DropTable("dbo.Osoba");
             DropTable("dbo.Grad");

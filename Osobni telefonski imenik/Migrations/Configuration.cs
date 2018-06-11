@@ -30,18 +30,19 @@ namespace Osobni_telefonski_imenik.Migrations
             //
 
             context.Drzava.AddOrUpdate(
-                x => x.DrzavaID,
-                new Drzava { Naziv = "Hrvatska" },
+                new Drzava { Naziv = "Hrvatska"},
                 new Drzava { Naziv = "Slovenija" },
-                new Drzava { Naziv = "Èeška" }
-            );
+                new Drzava { Naziv = "Finska" },
+                new Drzava { Naziv = "Èeška" },
+                new Drzava { Naziv = "Španjolska" },
+                new Drzava { Naziv = "Švedska"}
+                );
 
             context.BrojTip.AddOrUpdate(
-               x => x.Naziv,
-               new BrojTip { Naziv = "Kuæni"},
-               new BrojTip { Naziv = "Posao" },
-               new BrojTip { Naziv = "Mobitel" }
-               );
+                new BrojTip {Naziv = "Kuæni"},
+                new BrojTip {Naziv = "Mobitel"},
+                new BrojTip { Naziv = "Posao" }
+                );
         }
     }
 }

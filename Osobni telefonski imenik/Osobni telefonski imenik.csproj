@@ -199,21 +199,14 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201805221921084_InitialMigration.cs" />
-    <Compile Include="Migrations\201805221921084_InitialMigration.Designer.cs">
-      <DependentUpon>201805221921084_InitialMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201805241931075_DodanUserID.cs" />
-    <Compile Include="Migrations\201805241931075_DodanUserID.Designer.cs">
-      <DependentUpon>201805241931075_DodanUserID.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201805251837317_DodanFullName.cs" />
-    <Compile Include="Migrations\201805251837317_DodanFullName.Designer.cs">
-      <DependentUpon>201805251837317_DodanFullName.cs</DependentUpon>
+    <Compile Include="Migrations\201806111833251_InitialMigration.cs" />
+    <Compile Include="Migrations\201806111833251_InitialMigration.Designer.cs">
+      <DependentUpon>201806111833251_InitialMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\Brojevi.cs" />
     <Compile Include="Models\BrojTip.cs" />
     <Compile Include="Models\Drzava.cs" />
     <Compile Include="Models\Grad.cs" />
@@ -317,14 +310,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201805221921084_InitialMigration.resx">
-      <DependentUpon>201805221921084_InitialMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201805241931075_DodanUserID.resx">
-      <DependentUpon>201805241931075_DodanUserID.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201805251837317_DodanFullName.resx">
-      <DependentUpon>201805251837317_DodanFullName.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201806111833251_InitialMigration.resx">
+      <DependentUpon>201806111833251_InitialMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

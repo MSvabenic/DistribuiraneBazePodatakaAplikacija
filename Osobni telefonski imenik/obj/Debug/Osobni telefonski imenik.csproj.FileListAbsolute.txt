@@ -65,11 +65,10 @@ F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski ime
 F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Microsoft.AI.ServerTelemetryChannel.xml
 F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Microsoft.AI.WindowsServer.xml
 F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\bin\Microsoft.AI.Web.xml
-F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\obj\Debug\Osobni telefonski imenik.csprojResolveAssemblyReference.cache
 F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\obj\Debug\Osobni telefonski imenik.csproj.CoreCompileInputs.cache
 F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\obj\Debug\Osobni telefonski imenik.dll
 F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\obj\Debug\Osobni telefonski imenik.pdb
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\obj\Debug\Osobni telefonski imenik.csprojAssemblyReference.cache
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\obj\Debug\Osobni telefonski imenik.csproj.CopyComplete
 F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\obj\Debug\Osobni_telefonski_imenik.Migrations.InitialMigration.resources
-F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\obj\Debug\Osobni telefonski imenik.csproj.GenerateResource.Cache
-F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\obj\Debug\Osobni_telefonski_imenik.Migrations.DodanUserID.resources
-F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\obj\Debug\Osobni_telefonski_imenik.Migrations.DodanFullName.resources
+F:\Visual Studio Projects\Lokalno\Osobni telefonski imenik\Osobni telefonski imenik\obj\Debug\Osobni telefonski imenik.csproj.GenerateResource.cache

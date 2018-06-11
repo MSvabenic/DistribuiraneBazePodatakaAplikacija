@@ -7,7 +7,7 @@
                 tr.append("<td>" + json[i].OsobaId + "</td>");
                 tr.append("<td>" + json[i].Ime + "</td>");
                 tr.append("<td>" + json[i].Prezime + "</td>");
-                tr.append("<td>" + json[i].Brojevi + "</td>");
+                tr.append("<td>" + json[i].Broj + "</td>");
                 tr.append("<td>" + json[i].Opcije + "</td>");
                 $('table').append(tr);
             }

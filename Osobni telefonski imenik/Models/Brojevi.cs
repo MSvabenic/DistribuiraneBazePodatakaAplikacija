@@ -6,17 +6,17 @@ using System.Web;
 
 namespace Osobni_telefonski_imenik.Models
 {
-    public class OsobaBroj
+    public class Brojevi
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Guid ID { get; set; }
 
-        public Guid OsobaID { get; set; }
+        public Guid BrojTipID { get; set; }
 
-        public Guid BrojID { get; set; }
+        public string Broj { get; set; }
 
-        public virtual Osoba Osoba { get; set; }
+        public string Opis { get; set; }
 
-        public virtual Brojevi Broj { get; set; }
+        public virtual BrojTip BrojTip { get; set; }
     }
 }
